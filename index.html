@@ -1,75 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Subhradeep Pal | Robotics & Mechatronics</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Subhradeep Pal | Robotics & Mechatronics</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 
 <nav>
+  <div class="nav-left">Subhradeep Pal</div>
+  <div class="nav-right">
     <a href="#about">About</a>
-    <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
+  </div>
 </nav>
 
-<header>
-    <h1>Subhradeep Pal</h1>
-    <p>B.Tech Mechanical Engineering | Mechatronics | Robotics</p>
+<header class="hero">
+  <h1>Subhradeep Pal</h1>
+  <p class="tagline">
+    Mechanical Engineering @ IIT Madras<br>
+    Robotics • Mechatronics • Control Systems
+  </p>
+  <p class="sub">
+    I work at the intersection of mechanical design, control theory,
+    and autonomous systems — building robots, compliant mechanisms,
+    and physics-driven control solutions.
+  </p>
 </header>
 
 <section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a Mechanical Engineering undergraduate at IIT Madras with strong
-        interests in mechatronics, robotics, control systems, and vehicle dynamics.
-        I enjoy working on projects that combine mechanical design with control
-        and embedded systems.
-    </p>
-</section>
-
-<section id="experience">
-    <h2>Experience</h2>
-    <ul>
-        <li><b>Team Chetak (ABU Robocon 2025)</b> – Mechatronics Module</li>
-        <li><b>Tennistron Project</b> – Vision & Robotics Software</li>
-        <li><b>AGV Line Following Robot</b></li>
-    </ul>
+  <h2>About Me</h2>
+  <p>
+    I am a third-year B.Tech Mechanical Engineering student at IIT Madras (CGPA 9.21),
+    with strong interests in robotics, mechatronics, and control systems.
+    My work spans autonomous robots, composite structures,
+    and physics-based battery control.
+  </p>
+  <p>
+    I enjoy problems where mechanical intuition, analytical modeling,
+    and real hardware come together.
+  </p>
 </section>
 
 <section id="projects">
-    <h2>Projects</h2>
+  <h2>Featured Projects</h2>
+
+  <div class="project-card">
+    <h3>Basketball-Playing Robot | ABU Robocon 2025</h3>
+    <p class="meta">Team Chetak • IIT Madras • Mechatronics Module</p>
     <ul>
-        <li>Quadruped Robot (Backdrivable & Compliant Design)</li>
-        <li>Basketball Shooting Robot</li>
-        <li>Tennis Ball Tracking System (YOLO + OpenCV)</li>
-        <li>Vehicle Dynamics & Control Simulations</li>
+      <li>Designed holonomic X-drive chassis with omni wheels for omnidirectional motion</li>
+      <li>Pneumatic jumping mechanism achieving 28–32 cm vertical jump</li>
+      <li>Dual-flywheel shooting system with 80% accuracy at 5 m</li>
     </ul>
+    <p class="impact">⭐ Stage-1 Score: <b>91 / 100</b> • Weight reduced by <b>18%</b></p>
+  </div>
+
+  <div class="project-card">
+    <h3>Composite Layup Optimization for Prosthetic Foot</h3>
+    <p class="meta">Mechanical Design & Simulation Intern • HTIC IITM</p>
+    <ul>
+      <li>Applied Classical Laminate Theory and Ansys ACP for composite optimization</li>
+      <li>Parametric studies on layup sequence, material systems, and loading conditions</li>
+      <li>Validated analytical predictions with FEA (within 8% agreement)</li>
+    </ul>
+    <p class="impact">⭐ <b>23%</b> reduction in deflection • <b>35%</b> stress reduction</p>
+  </div>
+
+  <div class="project-card">
+    <h3>PyBaMM Hardware-in-the-Loop Battery Control</h3>
+    <p class="meta">Undergraduate Research • IIT Madras</p>
+    <ul>
+      <li>Physics-based Li-ion battery modeling using PyBaMM</li>
+      <li>Developing MPC + EKF for SOC and SOH estimation</li>
+      <li>Planning HIL validation with battery emulator</li>
+    </ul>
+    <p class="impact">⭐ Focus: Optimal charging & degradation minimization</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Line Following Robot</h3>
+    <p class="meta">Course Project • Measurements & Control</p>
+    <ul>
+      <li>Compact chassis design optimized for high-speed stability</li>
+      <li>PID control with weighted IR sensor feedback</li>
+      <li>Adaptive speed control for curves and straights</li>
+    </ul>
+    <p class="impact">⭐ Fastest lap: <b>26 seconds</b> • 95% success rate</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Tennis Detection & Tracking System</h3>
+    <p class="meta">Project Tennistron • Computer Vision</p>
+    <ul>
+      <li>Custom YOLOv5 tennis ball detector trained on 528+ images</li>
+      <li>Achieved 81.4% mAP@0.5 with real-time performance</li>
+      <li>Integrated player and ball tracking for robotic response</li>
+    </ul>
+    <p class="impact">⭐ <b>81.4%</b> mAP • <b>30 FPS</b> real-time</p>
+  </div>
+
 </section>
 
 <section id="skills">
-    <h2>Skills</h2>
-    <p>
-        CAD: Fusion 360, SolidWorks<br>
-        Simulation: Ansys, Gazebo, MATLAB<br>
-        Programming: Python, C++, ROS2<br>
-        Control Systems, Vehicle Dynamics, Mechatronics
-    </p>
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div>
+      <h4>Mechanical & Design</h4>
+      <p>SolidWorks, Fusion 360, AutoCAD, CREO, Manufacturing</p>
+    </div>
+    <div>
+      <h4>Simulation & Analysis</h4>
+      <p>Ansys (FEA, ACP), MATLAB, Simulink</p>
+    </div>
+    <div>
+      <h4>Robotics & Control</h4>
+      <p>Control Systems, MPC, ROS2, Gazebo</p>
+    </div>
+    <div>
+      <h4>Programming</h4>
+      <p>Python, C++, OpenCV, YOLOv5 / YOLOv8, Git</p>
+    </div>
+  </div>
 </section>
 
 <section id="contact">
-    <h2>Contact</h2>
-    <p>
-        Email: yourname@email.com <br>
-        GitHub: <a href="https://github.com/yourusername">yourusername</a><br>
-        LinkedIn: <a href="https://linkedin.com/in/yourprofile">Profile</a>
-    </p>
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:subhradeeppal99@gmail.com">subhradeeppal99@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/zefro-245">github.com/zefro-245</a></p>
+  <p>Location: Chennai, India</p>
 </section>
 
 <footer>
-    © 2025 Subhradeep Pal
+  © 2025 Subhradeep Pal
 </footer>
 
 </body>
